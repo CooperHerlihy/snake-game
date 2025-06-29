@@ -13,4 +13,6 @@ cmake -Bbuild .
 cmake --build build  
 ```
 
-No dependencies required.  
+# Dependencies
+
+Just CMake and a C/C++ compiler.  
