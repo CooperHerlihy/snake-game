@@ -47,9 +47,9 @@ SDL_AppResult SDL_AppInit(void** appstate, int, char**) {
     *appstate = new Game{};
     Game& game = **reinterpret_cast<Game**>(appstate);
 
-    SDL_Init(NULL);
+    SDL_Init(0);
 
-    game.window = SDL_CreateWindow("Snake", 1920, 1080, NULL);
+    game.window = SDL_CreateWindow("Snake", 1920, 1080, SDL_WINDOW_FULLSCREEN);
     if (game.window == nullptr)
         return SDL_APP_FAILURE;
 
